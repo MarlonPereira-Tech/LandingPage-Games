@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html,body{
+    height: 100%;
+    background-color: rgb(225,225,225);
+}
+.container{
+    max-width: 1100px;
+    margin:0 auto;
+    padding:0 2%;
+}
+.clear{
+    clear:both;
+}
+header{
+    margin-top: 10px;
+}
+
+.logo{
+    float:left;
+}
+.logo img{
+    max-width: 100%;
+}
+.menu-header{
+    float:right;
+    margin-top: 15px;
+}
+.menu-header a{
+    text-decoration: none;
+    margin: 0 15px;
+    color:black;
+    font-size: 13px;
+}
+.menu-header a.cta-menu{
+    background-color: #30851d;
+    padding:8px 25px;
+    color:white;
+    font-size: 16px;
+}
+section.topo{
+    margin-top: 10px;
+    padding:30px 0;
+    background-color: white;
+}
+.texto-topo{
+    margin-top: 20px;
+    float:left;
+    width: 50%;
+    color:#11223f;
+    padding:0 20px;
+}
+.texto-topo h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.texto-topo p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.img-topo{
+    float:left;
+    width:50%;
+}
+.img-topo img{
+    max-width: 100%;
+}
+section.depoimentos{
+    padding:30px 0;
+}
+.depoimento-single{
+    margin-bottom: 10px;
+    background-color: white;
+    background-image: url('../images/quote.png');
+    background-size: 55px 40px;
+    background-position: calc(100% - 10px) 10px;
+    background-repeat: no-repeat;
+    width:40%;
+    margin-right: 10%;
+    padding:30px;
+}
+.depoimento-single p{
+    font-weight: bold;
+    font-size: 13px;
+    color:black;
+}
+.depoimento-single span{
+    color:green;
+    font-weight: bold;
+    font-size: 11px;
+}
+section.depoimentos > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 768px){
+    .texto-topo,.img-topo{
+        width:100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .depoimento-single{
+        width:100%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 580px){
+    .logo,.menu-header{
+       float:none;
+       text-align: center;
+       margin-bottom: 10px;
+    }
+    .menu-header a.cta-menu{
+        display: inline-block;
+        bottom: 5px;
+
+    }
+}
